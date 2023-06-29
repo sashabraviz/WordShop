@@ -1,0 +1,145 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+    font-weight: 700;
+@include adaptiv-value("font-size", 72, 44, 1);
+@include adaptiv-value("line-height", 88, 54, 1);
+color: #F0F0F0;
+}
+.span {
+    color: #FFC700;
+}
+.sub-title {
+    font-weight: 300;
+font-size: rem(32);
+line-height: rem(39);
+color: #949494;
+}
+.mini-title {
+   font-weight: 600;
+font-size: rem(48);
+line-height: rem(59);
+}
+//========================================================================================================================================================
+
+.button {
+    display: inline-block;
+    background: #FFC700;
+    border: 2px solid #FFC700;
+    transition: all 0.3s ease 0s;
+    @media (max-width: em(480)){
+          display: flex;
+          justify-content: center;
+    }
+    &:hover {
+        background: inherit;
+    }
+    &:hover a{
+        color: #fff;
+        text-decoration: underline;
+    }
+    a  {
+        font-weight: 800;
+font-size: rem(20);
+line-height: 100%;
+text-transform: uppercase;
+color: #1C1C1C;
+    }
+}
+//========================================================================================================================================================
+
+.about__body-a-link {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+    a {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+        width: rem(38);
+        height: rem(38);
+        background: #FFC700;
+        border-radius: rem(6);
+        border: rem(1.5) solid #FFC700;
+        transition: all 0.3s ease 0s;
+        svg {
+            color: #000;
+        }
+        &:hover {
+            background: inherit;
+
+        }
+         &:hover svg{
+           color: #7c6100;
+        }
+    }
+}
+//========================================================================================================================================================
+
+.input {
+position: relative;
+color: #FFC700;
+background: #111111;
+&::placeholder {
+    font-size: rem(16);
+line-height: rem(20);
+color: #FFC700;
+}
+}
+.submit {
+    cursor: pointer;
+    display: inline-block;
+    background: #FFC700;
+    transition: all 0.3s ease 0s;
+    @media (max-width: em(480)){
+          display: flex;
+          justify-content: center;
+    }
+    &:hover {
+        background: #7c6100;
+    }
+        font-weight: 800;
+font-size: rem(20);
+line-height: 100%;
+text-transform: uppercase;
+color: #1C1C1C;  
+}
+//========================================================================================================================================================
+.index-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(30);
+    li {
+    font-weight: 300;
+font-size: rem(16);
+line-height: rem(20);
+color: #A4A4A4;
+}
+}
+.index-link {
+    font-weight: 300;
+font-size: rem(16);
+line-height: rem(20);
+color: #A4A4A4;
+&:hover {
+    text-decoration: underline;
+}
+}
+.index-link-active {
+    color: #FFC700;
+}
+//==========================button 2==============================================================================================================================
+.btn-buy {
+    border: rem(2) solid #FFC700;
+    font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #FFC700;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+&:hover {
+    background: #FFC700;
+    color: #070707;
+    text-decoration: underline;
+}
+}
+//========================================================================================================================================================

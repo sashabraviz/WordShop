@@ -1,0 +1,80 @@
+//====================================================================================================
+.footer {
+    background: #191919;
+    padding: rem(43) 0px ;
+}
+.footer__container {
+     display: flex;
+        flex-wrap: wrap;
+        column-gap: rem(80);
+        row-gap: rem(30);
+        justify-content: center;
+        align-items: center;
+}
+.footer-logo-a {
+    margin-top: rem(14);
+}
+.footer-body {
+     display: flex;
+        flex-wrap: wrap;
+        column-gap: rem(75);
+        row-gap: rem(40);
+        justify-content: center;
+}
+.footer-body-list {
+    display: flex;
+        flex-direction: column;
+        gap: rem(8);
+}
+.footer-body-title {
+    font-weight: 600;
+font-size: rem(24);
+line-height: rem(29);
+margin-bottom: rem(10);
+}
+.footer-body-link {
+font-size: rem(16);
+line-height: rem(20);
+color: #B7B7B7;
+transition: color 0.3s ease 0s;
+&:hover {
+    color: #FFC700;
+    text-decoration: underline;
+}
+}
+.footer-input__title {
+    font-weight: 600;
+font-size: rem(20);
+line-height: rem(24);
+}
+.footer-input__sub-title {
+    font-size: rem(14);
+line-height: rem(17);
+color: #B7B7B7;
+}
+.footer-input-body {
+    margin-top: rem(15);
+    form {
+        display: flex;
+        gap: rem(15);
+    }
+}
+.footer__input {
+    width: rem(190);
+    height: rem(30);
+    padding-left: rem(14);
+    &::placeholder {
+        font-weight: 300;
+    font-size: rem(12);
+    line-height: rem(15);
+    }
+}
+.footer__subit {
+    width: rem(100);
+    height: rem(30);
+    font-weight: 500;
+font-size: rem(12);
+line-height: rem(15);
+color: #000000;
+}
+//====================================================================================================
